@@ -1,0 +1,12 @@
+Aspect,Configuration,Key detail
+Dataset and files,"3,000 case records, 25 rule objects","rule_library.csv, environmental_cases.csv, case_outputs.csv"
+Task and outputs,Five-class proof-state prediction,"Confirmed violation, probable violation, no violation, insufficient evidence, human review required"
+Data split,70/15/15 stratified split,"2,100 training, 450 validation, 450 test cases; stratified by rule family and proof state"
+Model inputs,"Structured evidence, inspection text, candidate rule object","Output labels, corrective actions, final case-file fields, and human-review labels excluded from inputs"
+Structured encoder,FT-Transformer,"128-dimensional embeddings, 4 transformer blocks, 8 heads, GELU, 0.20 dropout"
+Text/rule encoder,DistilBERT-base + RECAE,128-token maximum length; rule-evidence cross-attention with 8 heads
+Fusion and prediction,LEF-Net + softmax proof-state head,"Evidence-channel attention over structured, text-rule, and rule embeddings"
+Training setup,AdamW with class-weighted cross-entropy,"Learning rate 2 × 10^-5, weight decay 0.01, batch size 32, maximum 50 epochs"
+Validation protocol,Early stopping and threshold tuning on validation set,"Patience = 7, monitored on validation macro-F1"
+Rule-constrained output,Deterministic validator after ML prediction,"Checks rule applicability, obligation, breach, evidence quality, domestic mapping, missing evidence, and structured-text conflict"
+Final generated outputs,Validated proof state and reviewable case file,"Applicable rule, evidence matrix, corrective action, human-review flag"

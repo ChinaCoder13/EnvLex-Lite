@@ -1,0 +1,1 @@
+case_id,true_proof_state,predicted_proof_state,validated_proof_state,confidence,candidate_rule_id,predicted_rule_id,human_review_flag,unsupported_claim_flag

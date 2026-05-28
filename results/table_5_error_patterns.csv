@@ -1,0 +1,6 @@
+Error pattern,Typical source,Affected proof states,Framework response
+Missing document field but supportive inspection text,Partial structured record,Confirmed vs probable violation,Downgrades to probable or insufficient evidence
+Vague exemption language,Short inspection observation,Probable vs human review,Routes to human review when exemption status is unclear
+Threshold breach with invalid quality flag,Structured numerical evidence,Confirmed vs insufficient evidence,Blocks confirmed label through evidence-quality condition
+Text contradicts structured field,Field-text inconsistency,Any violation state vs human review,Triggers conflict-based human review
+Domestic mapping unavailable,Rule-context gap,Confirmed vs no/insufficient evidence,Prevents final confirmed violation

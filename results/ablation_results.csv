@@ -1,0 +1,6 @@
+Model variant,Macro-F1,Unsupported claim rate,Interpretation
+Full EnvLex-Lite,0.921,0.028,Complete model with all components
+Without RECAE,0.884,,Reduced rule-aware inspection-text interpretation
+Without FT-Transformer,0.872,,Reduced structured-evidence reasoning
+Without LEF-Net,0.895,,Reduced evidence-channel fusion
+Without rule-constrained validator,,0.074,Higher unsupported claim rate; reduced legal consistency

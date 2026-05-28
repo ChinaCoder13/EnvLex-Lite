@@ -1,0 +1,4 @@
+Case ID,Rule family,Final proof state,Key evidence chain,Final case-file action
+CASE_0417,Basel-inspired,Confirmed violation,Regulated hazardous waste → controlled movement → missing consent → inspection support,Suspend movement; obtain consent; submit movement/disposal trail
+CASE_0883,Minamata-inspired,Confirmed violation,Mercury value above legal limit → valid evidence quality → missing handling record,Stop release; submit verified lab report; provide mercury-waste record
+CASE_1139,Stockholm-inspired,Human review required,Listed POP → controlled storage → unclear exemption text → partial disposal record,Verify exemption status; request complete disposal documentation

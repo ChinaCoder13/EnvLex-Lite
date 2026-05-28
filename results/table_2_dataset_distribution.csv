@@ -1,0 +1,17 @@
+Dataset component,Count / distribution,Interpretation
+Total case records,3000,De-identified environmental compliance records used for model training and evaluation
+Machine-readable rule objects,25,Five rule families with five rule templates per family
+Basel-inspired cases,620,Hazardous-waste movement and consent/documentation cases
+Rotterdam-inspired cases,590,Hazardous chemical export-consent cases
+Stockholm-inspired cases,560,"POP use, storage, exemption, and disposal cases"
+Minamata-inspired cases,630,"Mercury release, threshold, and mercury-waste handling cases"
+Montreal-inspired cases,600,"ODS license, quota, import, production, and use cases"
+Confirmed violation,810,"Cases satisfying rule applicability, obligation, breach, evidence quality, and domestic mapping"
+Probable violation,610,Cases with likely breach but incomplete or partially uncertain evidence
+No violation,680,"Cases where regulated item, controlled action, threshold breach, or obligation is absent"
+Insufficient evidence,520,Cases with missing critical fields or invalid evidence quality
+Human review required,380,Cases with conflicting structured/text evidence or ambiguous domestic mapping
+Mean inspection-text length,31.6 words,Short compliance-oriented inspection observations
+Missing-field rate,8.7%,Cases with at least one missing non-output field
+Text-field conflict rate,5.4%,Cases where inspection text conflicts with structured evidence
+Train/validation/test split,70/15/15,Stratified by rule family and proof state
