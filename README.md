@@ -35,13 +35,13 @@ EnvLex-Lite/
 Place the seven dataset files in the `data/` folder:
 
 ```text
-data/rule\\\_library.csv
-data/environmental\\\_cases.csv
-data/case\\\_outputs.csv
-data/train\\\_ids.csv
-data/val\\\_ids.csv
-data/test\\\_ids.csv
-data/data\\\_dictionary.csv
+data/rule_library.csv
+data/environmental_cases.csv
+data/case_outputs.csv
+data/train_ids.csv
+data/val_ids.csv
+data/test_ids.csv
+data/data_dictionary.csv
 ```
 
 The released dataset is a public research benchmark prepared from de-identified, normalized, rule-mapped attributes. The original administrative records are not included in this repository because they may contain enforcement-sensitive information.
@@ -53,13 +53,13 @@ The code package includes scripts such as:
 ```text
 code/common.py
 code/modeling.py
-code/run\\\_baselines.py
-code/train\\\_model.py
-code/evaluate\\\_results.py
-code/run\\\_ablation.py
-code/make\\\_tables.py
-code/make\\\_figures.py
-code/run\\\_all.py
+code/run_baselines.py
+code/train_model.py
+code/evaluate_results.py
+code/run_ablation.py
+code/make_tables.py
+code/make_figures.py
+code/run_all.py
 ```
 
 ## Reproducing the workflow
@@ -73,18 +73,18 @@ pip install -r requirements.txt
 Run the complete workflow:
 
 ```bash
-python code/run\\\_all.py
+python code/run_all.py
 ```
 
 Or run steps individually:
 
 ```bash
-python code/run\\\_baselines.py
-python code/train\\\_model.py
-python code/evaluate\\\_results.py
-python code/run\\\_ablation.py
-python code/make\\\_tables.py
-python code/make\\\_figures.py
+python code/run_baselines.py
+python code/train_model.py
+python code/evaluate_results.py
+python code/run_ablation.py
+python code/make_tables.py
+python code/make_figures.py
 ```
 
 ## Expected manuscript-level outputs
@@ -101,31 +101,17 @@ The repository is organized to reproduce the paper's reported outputs, including
 * confusion matrix,
 * ablation Pareto map.
 
-The main reported EnvLex-Lite values in the manuscript are:
-
-|Metric|Reported value|
-|-|-:|
-|Accuracy|0.936|
-|Macro-F1|0.921|
-|Rule-matching accuracy|0.942|
-|Evidence completeness score|0.914|
-|Legal validation pass rate|0.967|
-|Unsupported claim rate|0.028|
-|Expected calibration error|0.031|
-
 ## Figure placement
 
 Final figures in the `figures/` folder:
 
 ```text
-fig1\\\_architecture.png
-fig2\\\_dataset\\\_pipeline.png
-fig3\\\_performance\\\_heatmap.png
-fig4\\\_rule\\\_family\\\_heatmap.png
-fig5a\\\_calibration\\\_curve.png
-fig5b\\\_risk\\\_coverage\\\_curve.png
-fig6\\\_confusion\\\_matrix.png
-fig7\\\_ablation\\\_pareto.png
+fig3_performance_heatmap.png
+fig4_rule_family_heatmap.png
+fig5a_calibration_curve.png
+fig5b_risk_coverage_curve.png
+fig6_confusion_matrix.png
+fig7_ablation_pareto.png
 ```
 
 
