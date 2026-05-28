@@ -1,7 +1,4 @@
 # Figure Placement Note
-
-Place final manuscript figures in this folder using the following filenames:
-
 | Manuscript figure | Repository filename |
 |---|---|
 | Fig. 3 Performance heatmap | `fig3_performance_heatmap.png` |
