@@ -106,12 +106,12 @@ The repository is organized to reproduce the paper's reported outputs, including
 Final figures in the `figures/` folder:
 
 ```text
-fig3_performance_heatmap.png
-fig4_rule_family_heatmap.png
-fig5a_calibration_curve.png
-fig5b_risk_coverage_curve.png
-fig6_confusion_matrix.png
-fig7_ablation_pareto.png
+Fig 3 - fig3_performance_heatmap.png
+Fig 4 - fig4_rule_family_heatmap.png
+Fig 5a - fig5a_calibration_curve.png
+Fig 5b - fig5b_risk_coverage_curve.png
+Fig 6 - fig6_confusion_matrix.png
+Fig 7 - fig7_ablation_pareto.png
 ```
 
 
